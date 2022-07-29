@@ -8,9 +8,68 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="background">
+        <div class="logo">
+            <img src="./images/logo.svg" alt="Logo">
+            <span class="name">Webix</span>
+        </div>
+        <p class="reference">
+            Background image from 
+            <a href="https://picsum.photos/">Picsum</a>
+            Logo from
+            <a href="https://logoipsum.com/">Logoipsum</a>
+        </p>
+    </div>
+    <form action="#" method="post">
+        <section class="header">
+            <p>This is not a real online service! You know you need
+                something like this in your life to help you realize
+                your deepest dreams. Sign up <i>now</i> to get started.
+            </p>
+            <p>You <i>know</i> you want to.</p>
+        </section>
+        <section class="form">
+            <h1>Let's do this!</h1>
+            <div class="section-div">
+                <section class="first-name form-section">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first-name">
+                </section>
+                <section class="last-name form-section">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last-name">
+                </section>
+            </div>
+            <div class="section-div">
+                <section class="email form-section">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </section>
+                <section class="phone-number form-section">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="number" id="phone">
+                </section>
+            </div>
+            <div class="section-div">
+                <section class="form-section">
+                    <label for="password">PASSWORD</label>
+                    <input type="text">
+                </section>
+                <section class="form-section">
+                    <label for="password-confirm">CONFIRM PASSWORD</label>
+                    <input type="text">
+                </section>
+            </div>
+        </section>
+        <section class="submit">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? 
+                <a href="#" id="log-in">Log in</a>
+            </p>
+        </section>
+    </form>
 </body>
 </html>
