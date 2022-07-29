@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 2;
     width: 40%;
     height: 100%;
     background-image: url(./images/bg-img.jpg);
@@ -76,12 +77,14 @@ section {
 }
 
 .form {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 40px;
     gap: 30px;
-    box-shadow: 0px 3px 8px #888888;
+    box-shadow: 1px 1px 8px #888888;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -101,6 +104,49 @@ section {
     font-size: 0.9rem;
 }
 
+input {
+    border: 2px solid #e6e7eb;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 2px solid lightblue;
+    box-shadow: 1px 1px 4px black;
+}
+
+input:valid {
+    border: 2px solid #e6e7eb;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.submit {
+    padding-top: 40px;
+    padding-left: 40px;
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 1.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.submit a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px black;
+    color: black;
+    background-color: #BDF5B0;
+}
+
 @media only screen and (max-width: 800px) {
     body {
         height: 100vh;
@@ -118,7 +164,7 @@ section {
         width: 100%;
     }
     section {
-        height: calc(80%/2);
+        height: 55%;
         width: 100%;
     }
     .header {
@@ -154,5 +200,10 @@ section {
     .form label {
         font-size: 0.5rem;
     }
-
+    .submit {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
